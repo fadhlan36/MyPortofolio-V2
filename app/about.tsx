@@ -159,7 +159,7 @@ export default function About() {
         <Fade>
           <div className="mt-24 md:mt-32 pb-6 border-text-secondary/10">
             <ScrollVelocity
-              texts={["Hello I'm Fadhlan", "Fullstack Web Developer"]}
+              texts={["Hello I'm Fadhlan", "Full Stack Web Developer"]}
               velocity={velocity}
               className="font-black tracking-tighter text-thirdary dark:text-button-hover opacity-50"
             />

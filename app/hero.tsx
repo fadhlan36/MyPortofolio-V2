@@ -10,7 +10,7 @@ export default function Hero() {
   const [deleting, setDeleting] = useState(false);
 
   const texts = useMemo(
-    () => ["Frontend Developer", "Backend Developer", "Fullstack Developer"],
+    () => ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
     [],
   );
 
