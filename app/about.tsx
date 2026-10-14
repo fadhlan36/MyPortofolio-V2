@@ -54,7 +54,7 @@ export default function About() {
                   </h4>
                   <p className="text-base text-text-secondary leading-relaxed font-medium">
                     Full Stack Developer experienced in React.js, Next.js,
-                    Express.js, and Laravel, with skills in frontend, backend,
+                    Express.js, and Laravel, with skills in front-end, back-end,
                     REST APIs, and database management. Passionate about
                     problem-solving and learning new technologies.
                   </p>

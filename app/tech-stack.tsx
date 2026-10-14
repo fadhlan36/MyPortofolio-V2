@@ -69,7 +69,7 @@ type TechCategory = {
 
 const techCategories: TechCategory[] = [
   {
-    title: "Frontend",
+    title: "Front End",
     description: "Frameworks and libraries for building interactive user interfaces.",
     technologies: [
       { name: "React.js", svg: "./icons/react.svg" },
@@ -86,7 +86,7 @@ const techCategories: TechCategory[] = [
     ],
   },
   {
-    title: "Backend",
+    title: "Back End",
     description: "Server-side technologies and frameworks.",
     technologies: [
       { name: "Node.js", svg: "./icons/nodejs.svg" },

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Fadhlan Portfolio",
   },
   description: "Personal portfolio of Fadhlan. Software Developer specializing in Next.js, Node.js, and modern web development.",
-  keywords: ["Fadhlan", "Portfolio", "Software Developer", "Web Development", "Backend", "Frontend", "Next.js", "React", "Node.js"],
+  keywords: ["Fadhlan", "Portfolio", "Software Developer", "Web Development", "Back-end", "Front-end", "Next.js", "React", "Node.js"],
   authors: [{ name: "Fadhlan" }],
   creator: "Fadhlan",
   openGraph: {

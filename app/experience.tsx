@@ -28,7 +28,7 @@ const experiences: ExperienceItem[] = [
     role: "Full Stack Developer (Intern)",
     date: "Apr 2026 - Jun 2026",
     description:
-      "Developed full-stack web applications using modern technologies, building responsive features and integrating frontend, backend, and database systems while continuously improving problem-solving skills and development practices.",
+      "Developed full-stack web applications using modern technologies, building responsive features and integrating front-end, back-end, and database systems while continuously improving problem-solving skills and development practices.",
     skills: ["Laravel", "React", "MySQL", "Tailwind CSS"],
   },
   {
