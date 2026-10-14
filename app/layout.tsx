@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Fadhlan Portfolio",
     images: [
       {
-        url: "/images/Foto.jpg",
+        url: "/images/foto.jpg",
         width: 1200,
         height: 630,
         alt: "Fadhlan Portfolio",
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fadhlan | Portfolio",
     description: "Personal portfolio of Fadhlan. Software Developer specializing in Next.js, Node.js, and modern web development.",
-    images: ["/images/Foto.jpg"],
+    images: ["/images/foto.jpg"],
     creator: "@fadhlan",
   },
   icons: {
-    icon: "/images/Foto.jpg",
-    shortcut: "/images/Foto.jpg",
-    apple: "/images/Foto.jpg",
+    icon: "/images/foto.jpg",
+    shortcut: "/images/foto.jpg",
+    apple: "/images/foto.jpg",
   },
   alternates: {
     canonical: "/",
