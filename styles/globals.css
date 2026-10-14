@@ -156,6 +156,18 @@ html {
   transition: transform 0.3s ease;
 }
 
+.tech-icon-dark {
+  display: none;
+}
+
+.dark .tech-icon-light {
+  display: none;
+}
+
+.dark .tech-icon-dark {
+  display: block;
+}
+
 /* 🔄 Animasi Infinite Scroll */
 @keyframes infinite-scroll {
   from {

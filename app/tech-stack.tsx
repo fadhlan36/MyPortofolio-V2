@@ -30,7 +30,20 @@ export default function TechStack() {
                         tech.svg.startsWith("<") ? (
                           <div className="w-full h-full" dangerouslySetInnerHTML={{ __html: tech.svg }} />
                         ) : (
-                          <img src={tech.svg} alt={tech.name} className="w-full h-full tech-icon-img" />
+                          <>
+                            <img
+                              src={tech.svg}
+                              alt={tech.name}
+                              className={`w-full h-full tech-icon-img ${tech.darkSvg ? "tech-icon-light" : ""}`}
+                            />
+                            {tech.darkSvg && (
+                              <img
+                                src={tech.darkSvg}
+                                alt=""
+                                className="w-full h-full tech-icon-img tech-icon-dark"
+                              />
+                            )}
+                          </>
                         )
                       ) : (
                         <div className="w-full h-full flex items-center justify-center font-bold text-xl bg-thirdary/50 rounded-lg">{tech.name.charAt(0)}</div>
@@ -48,7 +61,13 @@ export default function TechStack() {
   )
 }
 
-const techCategories = [
+type TechCategory = {
+  title: string;
+  description: string;
+  technologies: { name: string; svg: string; darkSvg?: string }[];
+};
+
+const techCategories: TechCategory[] = [
   {
     title: "Frontend",
     description: "Frameworks and libraries for building interactive user interfaces.",
@@ -56,9 +75,14 @@ const techCategories = [
       { name: "React.js", svg: "./icons/react.svg" },
       { name: "Next.js", svg: "./icons/nextjs.svg" },
       { name: "Tailwind CSS", svg: "./icons/tailwindcss.svg" },
-      { name: "HTML5", svg: "./icons/html.svg" },
-      { name: "CSS3", svg: "./icons/css.svg" },
-      { name: "Framer Motion", svg: "./icons/framermotion.svg" },
+      { name: "Bootstrap", svg: "./icons/bootstrap.svg" },
+      {
+        name: "Shadcn UI",
+        svg: "./icons/shadcnLight.svg",
+        darkSvg: "./icons/shadcnDark.svg",
+      },
+      { name: "HTML", svg: "./icons/html.svg" },
+      { name: "CSS", svg: "./icons/css.svg" },
     ],
   },
   {
@@ -66,10 +90,24 @@ const techCategories = [
     description: "Server-side technologies and frameworks.",
     technologies: [
       { name: "Node.js", svg: "./icons/nodejs.svg" },
-      { name: "Express.js", svg: "./icons/express.svg" },
-      { name: "Go (Golang)", svg: "./icons/go.svg" },
-      { name: "Fiber", svg: "./icons/fiber.svg" },
+      {
+        name: "Express.js",
+        svg: "./icons/expressLight.svg",
+        darkSvg: "./icons/expressDark.svg",
+      },
       { name: "Laravel", svg: "./icons/laravel.svg" },
+      { name: "REST API", svg: "./icons/rest.svg" },
+      { name: "Next.js", svg: "./icons/nextjs.svg" },
+    ],
+  },
+  {
+    title: "Programming Languages",
+    description: "Programming languages used to build web applications.",
+    technologies: [
+      { name: "JavaScript", svg: "./icons/javascript.svg" },
+      { name: "TypeScript", svg: "./icons/typescript.svg" },
+      { name: "PHP", svg: "./icons/php.svg" },
+      { name: "Golang", svg: "./icons/go.svg" },
     ],
   },
   {
@@ -87,11 +125,17 @@ const techCategories = [
     description: "Development tools, version control, and deployment.",
     technologies: [
       { name: "Git", svg: "./icons/git.svg" },
-      { name: "GitHub", svg: "./icons/github.svg" },
-      { name: "Docker", svg: "./icons/docker.svg" },
-      { name: "Linux", svg: "./icons/linux.svg" },
-      { name: "Nginx", svg: "./icons/nginx.svg" },
+      { name: "Gitlab", svg: "./icons/gitlab.svg" },
+      {
+        name: "GitHub",
+        svg: "./icons/githubLight.svg",
+        darkSvg: "./icons/githubDark.svg",
+      },
+      // { name: "Docker", svg: "./icons/docker.svg" },
+      // { name: "Linux", svg: "./icons/linux.svg" },
+      // { name: "Nginx", svg: "./icons/nginx.svg" },
       { name: "Postman", svg: "./icons/postman.svg" },
+      { name: "Bruno", svg: "./icons/bruno.png" },
     ],
   },
 ]
