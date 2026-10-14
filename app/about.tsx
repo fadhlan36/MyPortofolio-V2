@@ -100,7 +100,7 @@ export default function About() {
                       Place of Birth
                     </span>
                     <span className="text-base font-semibold text-text-primary">
-                      Jakarta, Indonesia
+                      Singaraja, Indonesia
                     </span>
                   </div>
                 </FadeLeft>
